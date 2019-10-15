@@ -29,10 +29,13 @@
 ```bash
 (venv)name@host:~/poject/ pip3 install -r requirements.txt
 ```
+```bash
+$ sudo apt install redis-server
+```
 
 ### запуск сервиса
 ```bash
-name@host:~/# sudo service redis-server start
+name@host:~/ sudo service redis-server start
 ``` 
 ```bash
 (venv)name@host:~/poject/ ./manage runserver 8080 
@@ -70,6 +73,7 @@ $ curl -X DELETE http://127.0.0.1:8080/api/v2/tickers/detail/<ID>/ -H "Authoriza
 ### API endpoints
 ```bash
 http://localhost:8080/api/v2/tickers/all/
+http://localhost:8080/api/v2/tickers/create/
 http://localhost:8080/api/v2/tickers/detail/<int>/
 http://localhost:8080/api/v2/authtoken/token/login/
 http://localhost:8080/api/v2/authtoken/token/logout/
