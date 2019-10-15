@@ -162,29 +162,8 @@ CELERY_BEAT_SCHEDULE = {
 
 ### EMAIL
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_HOST_USER = 'nergilzaner@yandex.ru'
-EMAIL_HOST_PASSWORD = 'plokijuhyg'
+EMAIL_HOST = 'smtp.mail.com'
+EMAIL_HOST_USER = 'name@mail.com'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 587
-
-
-# DJOSER = {
-#     'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
-#     'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
-#     'ACTIVATION_URL': '#/activate/{uid}/{token}',
-#     'SEND_ACTIVATION_EMAIL': True,
-#     'SERIALIZERS': {},
-# }
-
-####### api v2
-
-#$ curl -LX GET http://127.0.0.1:8088/api/v2/detail/1/ -H 'Authorization: Token c555e185f7d2e4262795196b505a8243b40b1610'
-# celery -A tickers_api_v2 worker -B -l INFO
-# sudo service redis-server start
-
-##### api v1
-#$ curl -u user1:user1user1 -d '{"ticker":"TSLA", "max_price":"270.5200", "min_price":"270.1000", "email":"exemp2@mail.com"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:8000/api/tickers/subs/
-#$ http -a user1:user1user1 POST http://127.0.0.1:8000/api/tickers/subs/ symbol='FB' max_price='107.2000' min_price='100.1000' email='exemple@mail.com'
-#$ http -a user1:user1user1 GET http://127.0.0.1:8000/api/tickers/
-#$ curl -u user2:user2user2 -X DELETE http://127.0.0.1:8000/api/tickers/subs/2/
-#$ http -a user2:user2user2 GET http://127.0.0.1:8000/api/tickers/subs/11/
+###
