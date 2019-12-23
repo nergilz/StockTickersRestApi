@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 #LOGIN_REDIRECT_URL = '/'
 
 ### ALFA-VANTAGE
-API_KEY = 'G9Z758ODCFDT6JS0'
+API_KEY = '<KEY>'
 API_URL = 'https://www.alphavantage.co/query'
 
 ### DRF
